@@ -143,8 +143,4 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 }
 
-EMAIL_HOST = 'smtp.yandex.ru'
-EMAIL_PORT = 993
-EMAIL_HOST_USER = 'Thegeodez@yandex.ru'
-EMAIL_HOST_PASSWORD = 'mk1046185'
-EMAIL_USE_SSL = True
+
