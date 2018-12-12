@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'contacts',
     'accounts',
     'listings',
     'realtors',
@@ -113,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Moscow'
 
 USE_I18N = True
 
@@ -134,3 +135,16 @@ STATICFILES_DIRS = [
 # Meida folder settings
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# Messages
+from django.contrib.messages import constants as messages
+
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger',
+}
+
+EMAIL_HOST = 'smtp.yandex.ru'
+EMAIL_PORT = 993
+EMAIL_HOST_USER = 'Thegeodez@yandex.ru'
+EMAIL_HOST_PASSWORD = 'mk1046185'
+EMAIL_USE_SSL = True
